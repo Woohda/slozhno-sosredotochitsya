@@ -191,17 +191,12 @@
   row-gap: 10px;
 }
 
-.sunset,
-.ice-cream,
-.tape,
-.books,
-.street
- {
+.section-gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  }
+}
 
 .footer {
   position: relative;
