@@ -1,12 +1,43 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-logo-color: #ffC2E6;
+    --footer-logo-color: #ffC2E6;
+    --accent-color: #FF8DCB;
+    --nav-color: #353430;
+    --nav-hover-color: rgba(50 49 45 / 0.4);
+    --decor-element: #353430;
+    --section-title-color: #353430;
+    --main-title-color: #353430;
+    --main-title-bg-color: #FF8DCB;
+    --main-text-color: #353430;
+    --main-bg-color: #fff1f7;
+    --theme-bg: url(../images/cover-image-light.png);
+  }
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  .header-decoration-element {
+    display: none;
+  }
 }
+
+:root .theme_light {
+  --header-logo-color: #ffC2E6;
+  --footer-logo-color: #ffC2E6;
+  --accent-color: #FF8DCB;
+  --nav-color: #353430;
+  --nav-hover-color: rgba(50 49 45 / 0.4);
+  --decor-element: #353430;
+  --section-title-color: #353430;
+  --main-title-color: #353430;
+  --main-title-bg-color: #FF8DCB;
+  --main-text-color: #353430;
+  --main-bg-color: #fff1f7;
+  --theme-bg: url(../images/cover-image-light.png);
+} 
+
+
+
+.theme_light .header-decoration-element {
+  display: none;
+}
+
+
